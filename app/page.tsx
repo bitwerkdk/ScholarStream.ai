@@ -1,7 +1,6 @@
 import styles from "@/styles/Home.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import { BuyButton } from "./BuyButton";
 import { Feed } from "./Feed";
 import { TopicsList } from "./TopicsList";
 
@@ -36,7 +35,6 @@ const Pitch = () => (
             AI does the work for you, presenting you with the latest information
             in an easily digestible format.
         </p>
-        <BuyButton />
         <p>
             Explore the depths of knowledge today with{" "}
             <a href="/">ScholarStream.ai</a>.<br /> Your mind will thank you!
