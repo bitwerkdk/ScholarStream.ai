@@ -1,7 +1,6 @@
 import styles from "@/styles/Home.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import { BuyButton } from "./BuyButton";
 
 export const MiniPitch = () => {
     return (
@@ -18,7 +17,6 @@ export const MiniPitch = () => {
                 </Link>
             </h1>
             <p>Welcome to the world of academic insights!</p>
-            <BuyButton />
         </div>
     );
 };
