@@ -10,12 +10,15 @@ type AvatarProps = {
 
 export const Avatar = (props: AvatarProps) => {
     const { name } = props;
-    return (
-        <Suspense fallback={<AvatarPlaceholder name={name} />}>
-            {/* @ts-expect-error Server Component */}
-            <AvatarImage name={name} />
-        </Suspense>
-    );
+
+    return <AvatarPlaceholder name={name} />;
+
+    // return (
+    //     <Suspense fallback={<AvatarPlaceholder name={name} />}>
+    //         {/* @ts-expect-error Server Component */}
+    //         <AvatarImage name={name} />
+    //     </Suspense>
+    // );
 };
 
 const getAvatar = cache(async (name: string) => openai.getAvatar(name, "256"));
