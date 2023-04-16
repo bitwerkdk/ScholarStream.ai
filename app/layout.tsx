@@ -1,5 +1,4 @@
 import "@/styles/globals.css";
-import Script from "next/script";
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
 
@@ -12,10 +11,6 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <Script
-                src="https://plausible.io/js/script.js"
-                data-domain="scholarstream.ai"
-            />
             <body>
                 <nav className={styles.topNav}>
                     <Link href="/about">About</Link>
